@@ -6,16 +6,16 @@ interface IReactState {
   list: any;
 }
 
-interface IMoreConditionsProps {
+interface ICounterProps {
   value: any;
   handleIncrement: any;
   handleDecrement: any;
 }
 
-class Counter extends React.Component<IMoreConditionsProps> {
+class Counter extends React.Component<ICounterProps> {
   public state: IReactState;
 
-  constructor(props: IMoreConditionsProps) {
+  constructor(props: ICounterProps) {
     super(props);
   }
 
